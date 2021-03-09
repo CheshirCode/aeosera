@@ -142,7 +142,7 @@ body {
   .toTop {
   }
   .btn {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 7px;
@@ -209,11 +209,68 @@ body {
 }
 .menu__link:hover {
   color: #6CFFFF;
-
 }
 
+.hi-block {
+ }
+
+.hi-block__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.hi-block__image img{
+  max-height: 500px;
+  object-fit: contain;
+  padding: 20px; 
+  margin: 0 auto;
+}
+
+.hi-block__greet {
+  margin: 5px;
+  padding: 20px;
+}
+
+.hi-block__title,
+.article__title {
+  font-size: 30px;
+  color: white;
+  font-family: 'FrizQuadrataC';
+  padding: 20px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.hi-block__subtitle {}
+
+.hi-block__text,
+.article__text {
+  font-size: 20px;
+  color: white;
+  font-family: 'PT Sans';
+  padding: 20px;
+  margin: 10px 0px;
+}
+.hi-block__text a{
+  color:#6b1411;
+}
+.hi-block__text a:visited{
+  color:#446ee0;
+}
+.hi-block__text a:hover {
+  color: #f4f749;
+}
+
+.article__body {}
+
+.article__title {}
+
+.article__image {}
+
+.article__text {}
+
 .footer {
-  background: #0D1A3D;
+  background: #0d1a3d81;
   min-height: 50px;  
   overflow: hidden;
   color: white;
@@ -221,7 +278,7 @@ body {
 }
 .footer__body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .footer__about {
   flex: 1 1 50%;
@@ -242,4 +299,8 @@ body {
 .footer__about_text a{
   text-decoration: none;
   color: white;
+}
+.footer__forms{
+  margin: 20px;
+  padding: 20px;
 }
