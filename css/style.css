@@ -22,13 +22,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'RUSNeverwinter';
-	src: url('../fonts/RUSNeverwinter.eot');
-	src: local('☺'), url('../fonts/RUSNeverwinter.woff') format('woff'), url('../fonts/RUSNeverwinter.ttf') format('truetype'), url('../fonts/RUSNeverwinter.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 /* Обнуление страницы */
 
@@ -217,13 +210,18 @@ body {
 .hi-block__body {
   display: flex;
   flex-direction: column;
+  
+}
+
+.hi-block__image{
+  margin: 0 auto;
 }
 
 .hi-block__image img{
   max-height: 500px;
   object-fit: contain;
   padding: 20px; 
-  margin: 0 auto;
+ 
 }
 
 .hi-block__greet {
@@ -232,7 +230,8 @@ body {
 }
 
 .hi-block__title,
-.article__title {
+.article__title,
+.usefull {
   font-size: 30px;
   color: white;
   font-family: 'FrizQuadrataC';
@@ -249,6 +248,9 @@ body {
   color: white;
   font-family: 'PT Sans';
   padding: 20px;
+  margin: 10px 0px;
+}
+.hi-block__text p{
   margin: 10px 0px;
 }
 .hi-block__text a{
@@ -268,6 +270,38 @@ body {
 .article__image {}
 
 .article__text {}
+
+.usefull {
+}
+.usefull__row {
+  display: flex;
+  flex-wrap: wrap;
+align-items: stretch;
+}
+.usefull__column {
+  flex: 1 1 25%;
+  margin: 0px auto;
+  margin: 10px -20px;
+  padding: 10px 10px;
+}
+.usefull__column img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px auto;
+  margin: 10px;
+
+}
+.usefull__title {
+  font-family: 'Morpheus';
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  
+}
+.usefull__text {
+  margin: 10px;
+  padding: 10px;
+}
 
 .footer {
   background: #0d1a3d81;
