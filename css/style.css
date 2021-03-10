@@ -243,7 +243,8 @@ body {
 .hi-block__subtitle {}
 
 .hi-block__text,
-.article__text {
+.article__text, 
+.usefull__text {
   font-size: 20px;
   color: white;
   font-family: 'PT Sans';
@@ -276,19 +277,20 @@ body {
 .usefull__row {
   display: flex;
   flex-wrap: wrap;
-align-items: stretch;
 }
 .usefull__column {
+  max-height: 250px;
   flex: 1 1 25%;
   margin: 0px auto;
-  margin: 10px -20px;
-  padding: 10px 10px;
+  margin: 10px 5px;
+  padding: 10px 5px;
+  
 }
 .usefull__column img{
   max-width: 100%;
-  max-height: 100%;
+  max-height: 200px;
   margin: 0px auto;
-  margin: 10px;
+  align-items: stretch;
 
 }
 .usefull__title {
@@ -296,7 +298,7 @@ align-items: stretch;
   font-size: 20px;
   color: white;
   text-align: center;
-  
+    
 }
 .usefull__text {
   margin: 10px;
