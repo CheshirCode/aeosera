@@ -412,7 +412,7 @@ font-size: 16px;
 
 .hi-block__greet {
   margin: 5px;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .hi-block__title,
@@ -439,6 +439,7 @@ font-size: 16px;
 }
 .hi-block__text p{
   margin: 10px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .hi-block__text a{
   color: #9DE2F0;
@@ -449,6 +450,72 @@ font-size: 16px;
 .hi-block__text a:hover {
   color: #FF0103;
 }
+.hi-block__text ul{
+  padding: 20px;
+}
+.hi-block__text li{
+  background: url('../img/Horde_shield.png') 0 0/32px 32px no-repeat;
+  padding: 0px 0px 30px 40px;
+}
+
+.races {}
+
+.container {
+  font-family: 'PT Sans';
+  font-size: 20px;
+}
+
+.races__title,
+.allied-races__title {
+  font-family: 'Morpheus';
+  font-size: 20px;
+  padding: 20px;
+}
+
+.races__body {}
+
+.races__row,
+.allied-races__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.races__column,
+.allied-races__column {
+  margin: 0 auto;
+}
+
+.races__item {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.races__label,
+.allied-races__label {
+  	font-family: 'FrizQuadrataC';
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.races__image,
+.allied-races__image {
+  flex: 0 1 auto;
+}
+.races__image img,
+.allied-races__image img{
+  max-height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 765px) {
+  .races__row,
+  .allied-races__row{
+    display: none;
+  }
+}
+
+
 
 .article__body {}
 
@@ -470,27 +537,35 @@ font-size: 16px;
 }
 .usefull__row {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 0px -5px;
+  justify-content: space-between;
+
 }
 .usefull__column {
+  display: flex;
+  flex-direction: column;
   max-height: 400px;
-  flex: 1 1 20%;
-  margin: 0px auto;
-  margin: 10px 0px;
+  flex: 0 1 25%;
+  margin: 5px 0px;
   padding: 5px 5px;
   border-radius: 5px;
+  border: 1px solid rgb(20, 117, 161);
   
 }
 .usefull__column_image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
   height: 200px;
-  justify-content: center;
-  /* align-items: center; */
+  flex: 0 1 auto;
+  align-items: stretch;
   
 }
-.usefull__column img{
+.usefull__column_image img{
   max-width: 100%;
-  /* max-height: 200px; */
+  max-height: 200px;
+  object-fit: contain;
 }
 .usefull__title {
   font-family: 'Morpheus';
@@ -499,6 +574,7 @@ font-size: 16px;
   text-align: center;
 }
 .usefull__title a{
+  display: block;
   color: white;
   border: 5px outset #000;
   background: rgb(167, 7, 7);
