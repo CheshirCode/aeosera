@@ -2,25 +2,27 @@
   font-family: 'Azeroth';
   src: url('../fonts/Azeroth.eot');
   src: local('☺'),
-  url('../fonts/Azeroth.woff') format('woff'),
-  url('../fonts/Azeroth.ttf') format('truetype'),
-  url('../fonts/Azeroth.svg') format('svg');
+    url('../fonts/Azeroth.woff') format('woff'),
+    url('../fonts/Azeroth.ttf') format('truetype'),
+    url('../fonts/Azeroth.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-	font-family: 'FrizQuadrataC';
-	src: url('../fonts/FrizQuadrataC.eot');
-	src: local('☺'), url('../fonts/FrizQuadrataC.woff') format('woff'), url('../fonts/FrizQuadrataC.ttf') format('truetype'), url('../fonts/FrizQuadrataC.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'FrizQuadrataC';
+  src: url('../fonts/FrizQuadrataC.eot');
+  src: local('☺'), url('../fonts/FrizQuadrataC.woff') format('woff'), url('../fonts/FrizQuadrataC.ttf') format('truetype'), url('../fonts/FrizQuadrataC.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-	font-family: 'Morpheus';
-	src: url('../fonts/Morpheus.eot');
-	src: local('☺'), url('../fonts/Morpheus.woff') format('woff'), url('../fonts/Morpheus.ttf') format('truetype'), url('../fonts/Morpheus.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Morpheus';
+  src: url('../fonts/Morpheus.eot');
+  src: local('☺'), url('../fonts/Morpheus.woff') format('woff'), url('../fonts/Morpheus.ttf') format('truetype'), url('../fonts/Morpheus.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Обнуление страницы */
@@ -126,33 +128,33 @@ h6 {
 ============
 
 /* Блок контента */
-=======================================================================
-body {
+=======================================================================body {
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  }
-  .toTop {
-  }
-  .btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 7px;
-    padding: 10px;
-    margin: 5px;
-    text-decoration: none;
-    background: #781512;
-    border: 5px outset #6b1411;
-    color: white;
-    font-size: 20px;
-    font-family: 'Morpheus';
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
 }
-  
+
+.toTop {}
+
+.btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  background: #781512;
+  border: 5px outset #6b1411;
+  color: white;
+  font-size: 20px;
+  font-family: 'Morpheus';
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
 .wrapper {
   background: url('../img/wow-varkraft-simvol\ \(2\).webp') center / cover no-repeat fixed;
   min-height: 100%;
@@ -160,14 +162,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .container {
   max-width: 1180px;
-  color: white; 
+  color: white;
   margin: 5px;
   padding: 5px;
   margin: 0px auto;
   flex: 1 0 auto;
 }
+
 .container {
   max-width: 1180px;
   margin: 0px auto;
@@ -220,24 +224,26 @@ body {
   max-width: 100%;
   /* если у картинки есть подрезание снизу (не круглая) */
   display: block;
-  
-}
-.header__guild  {
-  font-family: 'Azeroth';
-font-size: 26px;
-color: #0D1A3D;
--webkit-text-stroke: 1px rgba(108, 255, 255, 1);
--webkit-text-fill-color: #0D1A3D;
-justify-content: center;
-text-align: center;
-flex: 0 1 auto;
-padding: 5px;
-z-index: 3;
 
 }
-@media (max-width: 320px){
+
+.header__guild {
+  font-family: 'Azeroth';
+  font-size: 26px;
+  color: #0D1A3D;
+  -webkit-text-stroke: 1px rgba(108, 255, 255, 1);
+  -webkit-text-fill-color: #0D1A3D;
+  justify-content: center;
+  text-align: center;
+  flex: 0 1 auto;
+  padding: 5px;
+  z-index: 3;
+
+}
+
+@media (max-width: 320px) {
   .header__guild {
-font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -260,7 +266,7 @@ font-size: 16px;
 }
 
 .heder__link {
-  
+
   text-decoration: none;
   font-size: 24px;
   color: white;
@@ -269,6 +275,7 @@ font-size: 16px;
   margin: 20px 0px; */
   cursor: pointer;
 }
+
 .heder__link:hover {
   color: #6CFFFF;
 }
@@ -383,15 +390,14 @@ font-size: 16px;
   }
 
   .header__list li {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 30px 0px;
   }
 }
 
-===============/* Исправления */===============================================================
+===============
 
-.hi-block {
-  
-}
+/* Исправления */
+===============================================================.hi-block {}
 
 .hi-block__body {
   display: flex;
@@ -399,15 +405,22 @@ font-size: 16px;
   margin: 100px 0px 0px 0px;
 }
 
-.hi-block__image{
-  margin: 0 auto;
+.hi-block__image {
+  margin: 0px 0px 10px 0px;
+  overflow: hidden;
 }
 
-.hi-block__image img{
-  max-height: 400px;
-  object-fit: contain;
-  padding: 0px 20px; 
- 
+.hi-block__image p {
+  padding: 0px 0px 0px 20px;
+  font-size: 16px;
+}
+
+.hi-block__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
 }
 
 .hi-block__greet {
@@ -416,7 +429,7 @@ font-size: 16px;
 }
 
 .hi-block__title,
-.article__title,
+.raid-up__title,
 .usefull {
   font-size: 30px;
   color: white;
@@ -429,7 +442,7 @@ font-size: 16px;
 .hi-block__subtitle {}
 
 .hi-block__text,
-.article__text, 
+.raid-up__text,
 .usefull__text {
   font-size: 20px;
   color: white;
@@ -437,23 +450,29 @@ font-size: 16px;
   padding: 10px 0px;
   margin: 10px 0px;
 }
-.hi-block__text p{
+
+.hi-block__text p {
   margin: 10px 0px;
   padding: 0px 0px 0px 0px;
 }
-.hi-block__text a{
+
+.hi-block__text a {
   color: #9DE2F0;
 }
-.hi-block__text a:visited{
-  color:#02C092;
+
+.hi-block__text a:visited {
+  color: #02C092;
 }
+
 .hi-block__text a:hover {
   color: #FF0103;
 }
-.hi-block__text ul{
+
+.hi-block__text ul {
   padding: 20px;
 }
-.hi-block__text li{
+
+.hi-block__text li {
   background: url('../img/Horde_shield.png') 0 0/32px 32px no-repeat;
   padding: 0px 0px 30px 40px;
 }
@@ -492,49 +511,88 @@ font-size: 16px;
 
 .races__label,
 .allied-races__label {
-  	font-family: 'FrizQuadrataC';
-    font-size: 20px;
-    text-align: center;
-    padding: 0px 5px;
+  font-family: 'FrizQuadrataC';
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 5px;
 }
 
 .races__image,
 .allied-races__image {
   flex: 0 1 auto;
 }
+
 .races__image img,
-.allied-races__image img{
+.allied-races__image img {
   max-height: 250px;
   max-width: 100%;
   object-fit: cover;
 }
+
 @media (max-width: 765px) {
+
   .races__row,
-  .allied-races__row{
+  .allied-races__row {
     display: none;
   }
 }
 
+.raid-up {}
 
+.container {}
+
+.raid-up__body {}
+
+.raid-up__title {}
+
+.raid-up__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.raid-up__image {}
+
+
+.raid-up__text {
+  flex: 1 1 50%;
+
+}
+
+.raid-up__text p.healer {
+  background: url('../img/wow-heal.png') 0 0/ 32px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+
+.raid-up__text p.tank {
+  background: url('../img/wow-tank.png') 0 0/ 32px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
+
+.raid-up__text p.damager {
+  background: url('../img/wow-dd.png') 0 0/ 32px no-repeat;
+  padding: 0px 0px 0px 35px;
+}
 
 .article__body {}
 
 .article__title {}
 
-.article__image{
- 
-}
-.article__image img{
+.article__image {}
+
+.article__image img {
   max-height: 400px;
   object-fit: cover;
-   margin: 0 auto;
-  
+  margin: 0 auto;
+
 }
 
 .article__text {}
 
-.usefull {
-}
+.usefull {}
+
 .usefull__row {
   display: flex;
   flex-wrap: wrap;
@@ -542,6 +600,7 @@ font-size: 16px;
   justify-content: space-between;
 
 }
+
 .usefull__column {
   display: flex;
   flex-direction: column;
@@ -551,29 +610,33 @@ font-size: 16px;
   padding: 5px 5px;
   border-radius: 5px;
   border: 1px solid rgb(20, 117, 161);
-  
+
 }
-.usefull__column_image{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+
+.usefull__column_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   flex: 0 1 auto;
   align-items: stretch;
-  
+
 }
-.usefull__column_image img{
+
+.usefull__column_image img {
   max-width: 100%;
   max-height: 200px;
   object-fit: contain;
 }
+
 .usefull__title {
   font-family: 'Morpheus';
   font-size: 25px;
   color: white;
   text-align: center;
 }
-.usefull__title a{
+
+.usefull__title a {
   display: block;
   color: white;
   border: 5px outset #000;
@@ -593,35 +656,42 @@ font-size: 16px;
 
 .footer {
   background: #0d1a3d81;
-  min-height: 50px;  
+  min-height: 50px;
   overflow: hidden;
   color: white;
   font-family: "PT Sans", sans-serif;
 }
+
 .footer__body {
   display: flex;
   flex-direction: row;
 }
+
 .footer__about {
   flex: 1 1 50%;
 }
-.footer__about_image img{
+
+.footer__about_image img {
   /* max-width: 300px; */
   max-height: 100%;
   object-fit: cover;
 }
+
 .footer__about_title {
   padding: 3px;
   text-align: center;
 }
+
 .footer__about_text {
   padding: 20px;
 }
-.footer__about_text a{
+
+.footer__about_text a {
   text-decoration: none;
   color: white;
 }
-.footer__forms{
+
+.footer__forms {
   margin: 20px;
   padding: 20px;
 }
