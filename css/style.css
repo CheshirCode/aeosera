@@ -128,15 +128,18 @@ h6 {
 ============
 
 /* Блок контента */
-=======================================================================body {
+=======================================================================
+body {
   height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .toTop {}
 
 .btn {
+  z-index: 10;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -156,7 +159,7 @@ h6 {
 }
 
 .wrapper {
-  background: url('../img/wow-varkraft-simvol\ \(2\).webp') center / cover no-repeat fixed;
+  background: url('../img/wow-varkraft-simvol.webp') center / cover no-repeat fixed;
   min-height: 100%;
   overflow: hidden;
   display: flex;
@@ -539,8 +542,6 @@ h6 {
 
 .raid-up {}
 
-.container {}
-
 .raid-up__body {}
 
 .raid-up__title {}
@@ -548,32 +549,35 @@ h6 {
 .raid-up__column {
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
-  justify-content: center;
-  align-items: center;
 }
 
-.raid-up__image {}
-
+.raid-up__image {
+  margin: 0px auto;
+}
+.raid-up__image img{
+  max-width: 100%;
+ max-height: 500px;
+ object-fit: cover;
+}
 
 .raid-up__text {
   flex: 1 1 50%;
-
+  line-height: 30px;
 }
 
 .raid-up__text p.healer {
   background: url('../img/wow-heal.png') 0 0/ 32px no-repeat;
-  padding: 0px 0px 0px 35px;
+  padding: 0px 0px 10px 45px;
 }
 
 .raid-up__text p.tank {
   background: url('../img/wow-tank.png') 0 0/ 32px no-repeat;
-  padding: 0px 0px 0px 35px;
+  padding: 0px 0px 10px 45px;
 }
 
 .raid-up__text p.damager {
   background: url('../img/wow-dd.png') 0 0/ 32px no-repeat;
-  padding: 0px 0px 0px 35px;
+  padding: 0px 0px 10px 45px;
 }
 
 .article__body {}
@@ -605,11 +609,11 @@ h6 {
   display: flex;
   flex-direction: column;
   max-height: 400px;
-  flex: 0 1 25%;
+  flex: 0 1 20%;
   margin: 5px 0px;
   padding: 5px 5px;
   border-radius: 5px;
-  border: 1px solid rgb(20, 117, 161);
+  
 
 }
 
@@ -663,23 +667,36 @@ h6 {
 }
 
 .footer__body {
-  display: flex;
-  flex-direction: row;
+  
 }
 
 .footer__about {
-  flex: 1 1 50%;
-}
-
-.footer__about_image img {
-  /* max-width: 300px; */
-  max-height: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .footer__about_title {
-  padding: 3px;
+  flex: 0 1 100%;
+  padding: 20px 0px 20px 0px;
   text-align: center;
+  
+}
+.footer_about_column {
+  flex: 0 1 300px;
+  
+}
+.footer_about_label{
+  
+}
+.footer__about_image {
+  
+}
+
+.footer__about_image img {
+  max-width: 300px;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .footer__about_text {
@@ -692,6 +709,17 @@ h6 {
 }
 
 .footer__forms {
-  margin: 20px;
+  flex: 1 1 50%;
+  margin: 0px 20px;
   padding: 20px;
+}
+.footer__image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__image img{
+  max-width: 100px;
+  max-height: 100%;
+  object-fit: cover;
 }
